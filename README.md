@@ -44,3 +44,23 @@ if __name__=="__main__":
 ```python
 ```
 4. Revisar que son los algoritmos de *sorting*, entender *bubble-sort* ([enlace](https://www.geeksforgeeks.org/bubble-sort/) a implementación).
+
+### Bubble Sort: Un Algoritmo de Ordenamiento Básico  
+
+* ¿Qué es Bubble Sort?  
+Bubble Sort es un algoritmo de ordenamiento que compara e intercambia elementos adyacentes hasta que la lista esté completamente ordenada. Su nombre proviene del hecho de que los valores más grandes "suben" gradualmente a su posición correcta, como burbujas en el agua.  
+
+Si bien es fácil de implementar y comprender, su ineficiencia lo hace poco práctico para grandes volúmenes de datos. Por esta razón, se usa principalmente con fines educativos para ilustrar los conceptos de ordenamiento.  
+
+* ¿Cómo funciona Bubble Sort?  
+El algoritmo sigue un proceso iterativo en el que compara elementos adyacentes y los intercambia si están en el orden incorrecto. Después de cada pasada, el elemento más grande (entre los no ordenados) se coloca en su posición final.  
+
+* Pasos del Algoritmo:  
+**Recorrer el arreglo**, comparando los elementos adyacentes.  
+**Intercambiar los elementos** si están en el orden incorrecto (el mayor antes del menor).  
+**Repetir el proceso** hasta que no haya más intercambios en una pasada.  
+**Después de cada pasada**, el elemento más grande de los no ordenados se posiciona correctamente.  
+**Repetir el proceso `n-1` veces**, donde `n` es el número de elementos en la lista.  
+
+Este método garantiza que, tras `k` pasadas, los `k` elementos más grandes estarán en sus posiciones finales.  
+
