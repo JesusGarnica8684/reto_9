@@ -45,6 +45,51 @@ if __name__=="__main__":
 ```
 4. Revisar que son los algoritmos de *sorting*, entender *bubble-sort* ([enlace](https://www.geeksforgeeks.org/bubble-sort/) a implementación).
 
+# Algoritmos de Sorting
+
+* ¿Qué son los algoritmos de ordenamiento?
+
+Los algoritmos de ordenamiento son métodos utilizados para organizar los elementos de una lista o arreglo en un orden específico, generalmente ascendente o descendente. Son fundamentales en informática, ya que permiten estructurar datos de manera eficiente para su procesamiento y análisis.
+
+* Tipos de algoritmos de ordenamiento
+
+Los algoritmos de ordenamiento se pueden clasificar en diferentes categorías según su funcionamiento y eficiencia.
+
+* Algoritmos de ordenamiento básicos
+
+Estos algoritmos son simples de entender e implementar, pero no son eficientes para grandes volúmenes de datos.
+
+- **Bubble Sort**: Compara e intercambia elementos adyacentes repetidamente hasta ordenar la lista.
+- **Selection Sort**: Encuentra el elemento más pequeño y lo coloca en su posición correcta en cada iteración.
+- **Insertion Sort**: Inserta cada elemento en su posición correcta dentro de una lista parcialmente ordenada.
+
+* Algoritmos eficientes
+
+Estos algoritmos tienen mejor rendimiento y son adecuados para manejar grandes conjuntos de datos.
+
+- **Merge Sort**: Aplica la estrategia de "divide y vencerás", dividiendo la lista en mitades, ordenándolas por separado y luego fusionándolas.
+- **Quick Sort**: Selecciona un elemento como pivote y divide la lista en dos subconjuntos, ordenando cada uno de manera recursiva.
+- **Heap Sort**: Utiliza una estructura de datos llamada "montículo" o "heap" para organizar y extraer los elementos en orden.
+
+* Algoritmos de ordenamiento lineal
+
+Algunos algoritmos pueden alcanzar un tiempo de ejecución de \(O(n)\) en casos específicos, aunque suelen requerir condiciones especiales.
+
+- **Counting Sort**: Ordena contando la frecuencia de los valores dentro de un rango limitado.
+- **Radix Sort**: Ordena los números procesando sus dígitos de menor a mayor.
+- **Bucket Sort**: Distribuye los elementos en diferentes grupos o "cubetas" y luego ordena cada una individualmente.
+
+* Importancia del ordenamiento
+
+El ordenamiento es una operación esencial en programación y ciencia de datos. Su correcta aplicación permite:
+
+- Mejorar la eficiencia de búsquedas, como en la **búsqueda binaria**.
+- Optimizar el almacenamiento y acceso a datos en bases de datos.
+- Facilitar la organización de información en estructuras como listas, colas y árboles.
+- Servir de base para algoritmos avanzados en inteligencia artificial, optimización y computación científica.
+
+La elección del algoritmo de ordenamiento adecuado depende del tamaño de los datos, la disponibilidad de memoria y la necesidad de estabilidad en la ordenación.
+
 ### Bubble Sort
 
 * ¿Qué es Bubble Sort?  
