@@ -63,7 +63,7 @@ if __name__=="__main__":
 ```
 4. Revisar que son los algoritmos de *sorting*, entender *bubble-sort* ([enlace](https://www.geeksforgeeks.org/bubble-sort/) a implementación).
 
-# Algoritmos de Sorting
+### Algoritmos de Sorting
 
 ¿Qué son los algoritmos de ordenamiento?
 
