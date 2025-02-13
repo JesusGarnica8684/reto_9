@@ -42,20 +42,38 @@ if __name__=="__main__":
 ```
 3. Hacer un algoritmo que deje al final de un arreglo de números todos los ceros que aparezcan en dicho arreglo.
 ```python
+def mover_ceros(lista):
+    # Índice para guardar los elementos no ceros
+    inotnull = 0
+    # se repasa la lista y cuando se encuentra un elemento no cero se guarda en inotnull
+    for i in range(len(lista)):
+        if lista[i] != 0:
+            lista[inotnull] = lista[i] # se mueven los elementos no cero a las primeras posiciones
+            inotnull += 1
+    # se rellena el resto del arreglo con ceros
+    for i in range(inotnull, len(lista)):
+        lista[i] = 0
+    return lista
+
+if __name__=="__main__":
+    listaPrueba = [1, 0, 2, 0, 3, 4, 0, 5]
+    print(f"Lista original: {listaPrueba}")
+    listaOrdenada = mover_ceros(listaPrueba)
+    print(f"Lista con ceros al final: {listaOrdenada}")
 ```
 4. Revisar que son los algoritmos de *sorting*, entender *bubble-sort* ([enlace](https://www.geeksforgeeks.org/bubble-sort/) a implementación).
 
 # Algoritmos de Sorting
 
-* ¿Qué son los algoritmos de ordenamiento?
+¿Qué son los algoritmos de ordenamiento?
 
 Los algoritmos de ordenamiento son métodos utilizados para organizar los elementos de una lista o arreglo en un orden específico, generalmente ascendente o descendente. Son fundamentales en informática, ya que permiten estructurar datos de manera eficiente para su procesamiento y análisis.
 
-* Tipos de algoritmos de ordenamiento
+Tipos de algoritmos de ordenamiento
 
 Los algoritmos de ordenamiento se pueden clasificar en diferentes categorías según su funcionamiento y eficiencia.
 
-* Algoritmos de ordenamiento básicos
+Algoritmos de ordenamiento básicos
 
 Estos algoritmos son simples de entender e implementar, pero no son eficientes para grandes volúmenes de datos.
 
@@ -63,7 +81,7 @@ Estos algoritmos son simples de entender e implementar, pero no son eficientes p
 - **Selection Sort**: Encuentra el elemento más pequeño y lo coloca en su posición correcta en cada iteración.
 - **Insertion Sort**: Inserta cada elemento en su posición correcta dentro de una lista parcialmente ordenada.
 
-* Algoritmos eficientes
+Algoritmos eficientes
 
 Estos algoritmos tienen mejor rendimiento y son adecuados para manejar grandes conjuntos de datos.
 
@@ -71,7 +89,7 @@ Estos algoritmos tienen mejor rendimiento y son adecuados para manejar grandes c
 - **Quick Sort**: Selecciona un elemento como pivote y divide la lista en dos subconjuntos, ordenando cada uno de manera recursiva.
 - **Heap Sort**: Utiliza una estructura de datos llamada "montículo" o "heap" para organizar y extraer los elementos en orden.
 
-* Algoritmos de ordenamiento lineal
+Algoritmos de ordenamiento lineal
 
 Algunos algoritmos pueden alcanzar un tiempo de ejecución de \(O(n)\) en casos específicos, aunque suelen requerir condiciones especiales.
 
@@ -79,7 +97,7 @@ Algunos algoritmos pueden alcanzar un tiempo de ejecución de \(O(n)\) en casos 
 - **Radix Sort**: Ordena los números procesando sus dígitos de menor a mayor.
 - **Bucket Sort**: Distribuye los elementos en diferentes grupos o "cubetas" y luego ordena cada una individualmente.
 
-* Importancia del ordenamiento
+Importancia del ordenamiento
 
 El ordenamiento es una operación esencial en programación y ciencia de datos. Su correcta aplicación permite:
 
@@ -92,12 +110,13 @@ La elección del algoritmo de ordenamiento adecuado depende del tamaño de los d
 
 ### Bubble Sort
 
-* ¿Qué es Bubble Sort?  
+¿Qué es Bubble Sort?  
+
 Bubble Sort es un algoritmo de ordenamiento que compara e intercambia elementos adyacentes hasta que la lista esté completamente ordenada. Su nombre proviene del hecho de que los valores más grandes "suben" gradualmente a su posición correcta, como burbujas en el agua.  
 
 Si bien es fácil de implementar y comprender, es ineficiente para grandes volúmenes de datos. Por esta razón, se usa principalmente con fines educativos para ilustrar los conceptos de ordenamiento.  
 
-* ¿Cómo funciona Bubble Sort?  
+¿Cómo funciona Bubble Sort?  
 
 * Pasos del Algoritmo:  
 **Recorrer el arreglo**, comparando los elementos adyacentes.  
